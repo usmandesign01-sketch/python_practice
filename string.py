@@ -6,9 +6,7 @@ print(type(name))
 print(name.upper())
 print(name.lower())
 
-'''🚀 *Welcome back to our AI Engineer Roadmap! ❤️*
-
-In the previous post, we learned about Recursion and how a function can call itself to solve smaller versions of a problem. Now let's move to one of the most commonly used data types in Python.
+'''
 
 📖 *Phase 1: Programming Fundamentals*
 
