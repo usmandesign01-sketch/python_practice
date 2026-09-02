@@ -8,11 +8,12 @@ print(name.lower())
 
 '''
 
-📖 *Phase 1: Programming Fundamentals*
 
-📌 *Topic 14: Strings*
 
-A String is a sequence of characters used to represent text. Names, sentences, email addresses, file paths, messages, and many other types of textual information are represented using strings.
+Strings*
+
+A String is a sequence of characters used to represent text. Names, sentences, email addresses,
+file paths, messages, and many other types of textual information are represented using strings.
 
 Example:
 name = "Alice"
@@ -138,9 +139,10 @@ print("Java" not in text) # True
 
 *8. Strings Are Immutable*
 
-One of the most important things to understand about Python strings is that they are immutable. This means you cannot directly change an individual character.
+One of the most important things to understand about Python strings is that they are immutable.
+This means you cannot directly change an individual character.
 
-❌ This is not allowed:
+.. This is not allowed:
 word = "Python"
 word[0] = "J"
 Instead, you create a new string:
@@ -168,9 +170,12 @@ f-strings are widely used because they make formatted text easier to read.
 
 *11. Strings in AI and NLP*
 
-Strings become especially important when you move into Artificial Intelligence. AI systems frequently work with text such as: User questions, Chat messages, Documents, Reviews, Emails, Search queries, AI prompts.
+Strings become especially important when you move into Artificial Intelligence.
+AI systems frequently work with text such as: User questions, Chat messages, Documents,
+Reviews, Emails, Search queries, AI prompts.
 
-Before text can be processed by many NLP and LLM systems, it often needs to be cleaned, transformed, tokenized, or converted into numerical representations.
+Before text can be processed by many NLP and LLM systems, it often needs to be cleaned,
+transformed, tokenized, or converted into numerical representations.
 
 For example:
 text = " AI is AMAZING! "
@@ -179,18 +184,18 @@ print(cleaned_text) # ai is amazing!
 
 This is a very simple example of text preprocessing.
 
-*Common Beginner Mistakes*
-❌ Forgetting that indexing starts at 0.
-❌ Assuming the end index in slicing is included.
-❌ Trying to modify an individual character.
-❌ Confusing split() with join().
-❌ Forgetting that spaces count toward string length.
+* Common Mistakes:
+.. Forgetting that indexing starts at 0.
+.. Assuming the end index in slicing is included.
+.. Trying to modify an individual character.
+.. Confusing split() with join().
+.. Forgetting that spaces count toward string length.
 
 *Best Practices*
-✅ Use meaningful variable names.
-✅ Use appropriate string methods instead of manually processing characters when possible.
-✅ Use f-strings for readable string formatting.
-✅ Remember that strings are immutable.
+.. Use meaningful variable names.
+.. Use appropriate string methods instead of manually processing characters when possible.
+.. Use f-strings for readable string formatting.
+.. Remember that strings are immutable.
 
 *Key Takeaways*
 - A string is a sequence of characters.
