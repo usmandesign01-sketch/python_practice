@@ -1,0 +1,2 @@
+I am learning the file I/O topic in python
+today data is twenty august two thousand twenty seven 
