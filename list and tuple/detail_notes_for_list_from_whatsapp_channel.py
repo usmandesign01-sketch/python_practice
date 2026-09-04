@@ -1,6 +1,6 @@
 '''
 
-*📌 Topic 15: Lists*
+Lists
 
 A List is an ordered and mutable collection of items in Python.
 
