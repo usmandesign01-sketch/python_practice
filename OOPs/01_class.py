@@ -19,27 +19,6 @@
         Example: let's suppose I have a car we desing a blueprint that every Car will have blue color
         and 4 seats with AC'''
 
-# Without OOP, you might write:
-dog_name = "Buddy"
-dog_age = 3
-
-def bark(name):
-    return f"{name} says woof!"
-bark(dog_name)
-
-# With OOP, you bundle data + behavior together:
-class Dog:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-    def bark(self):
-        return f"{self.name} says woof!"
-
-
-
-
-
 # How to define a class for what to store
 # class Car:              # Class
 #     color = "Blue"
@@ -49,3 +28,23 @@ class Dog:
 # car1 = Car              # Object
 # print(car1.color)
 # print(car1.model)
+
+
+
+# Class Attribute:
+#                 An attribute that belongs to the class rather than a particular object.
+class Employe:
+    salary = 12300
+    language = "Py"
+
+usman = Employe()
+usman.name = "Usman Khan"
+print(f"Name is {usman.name}\nlanguage is {usman.language}\nsalary is {usman.salary}")
+
+print("\n")
+
+kamran = Employe()
+kamran.name = "Kamran"
+print(f"Name is {kamran.name}\nlanguage is {kamran.language}\nsalary is {kamran.salary}")
+
+# Here name is Object attribute and salaray and language are class attribute
