@@ -28,6 +28,8 @@ For example:
 
 and update the dictionary.'''
 
+# ******************************************************************************************************************************
+
 std_info = {
     "name" : "USMAN Khan",
     "age" : 19.4,
@@ -40,6 +42,27 @@ std_info = {
     "mutalia_Quran_marks" : 45
 
 }
+# printing total marks
+
+total_marks = (
+    std_info["math_marks"]
+    + std_info["computer_marks"]
+    + std_info["english_marks"]
+    + std_info["physics_marks"]
+    + std_info["urdu_marks"]
+    + std_info["mutalia_Quran_marks"]
+)
+
+# print(std_info) # This print in list form
+
 for key, value in std_info.items():
     print(f"{key} : {value}")
+    
+print(total_marks)
 
+average = total_marks/6
+print(f"The average is {average}")
+
+# total_marks = ["math_marks" + "computer_marks" + "english_marks" + "physics_marks" + "urdu_marks" + "mutalia_Quran_marks" ]
+# print(total_marks)
+# std_info["computer_marks"]
