@@ -253,3 +253,21 @@ Later, when you learn NumPy, Pandas, Machine Learning, and NLP, you'll encounter
 - Lists are heavily used in Python, Data Science, and AI
 
 '''
+# Accessing List Elements with help of Indexing
+
+my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
+my_friends[0]
+print(my_friends[0])  # Output: Abdullah
+my_friends[1]
+print(my_friends[1])  # Output: Zohaib
+my_friends[2]
+print(my_friends[2])  # Output: Zubair
+my_friends[3]
+print(my_friends[3])  # Output: Usman Khan
+
+# Negative Indexing
+my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
+print(my_friends[-1])  # Output: Usman Khan
+print(my_friends[-2])  # Output: Zubair
+print(my_friends[-3])  # Output: Zohaib
+print(my_friends[-4])  # Output: Abdullah
