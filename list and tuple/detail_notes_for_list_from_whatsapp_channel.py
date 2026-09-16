@@ -338,6 +338,11 @@ Later, when you learn NumPy, Pandas, Machine Learning, and NLP, you'll encounter
 
 # # Useful List Methods
 my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
-my_friends.append("Ali")  # Adding "Ali" to the end of the list
-print(my_friends)  # Output: ['Abdullah', 'Zohaib', 'Zubair', 'Usman Khan', 'Ali']  
-
+# my_friends.append("Ali")  # Adding "Ali" to the end of the list
+# my_friends.insert(1, "Ahmed")  # Inserting "Ahmed" at index 1
+# my_friends.remove("Zubair")  # Removing "Zubair" from the list
+# my_friends.pop(2)  # Removing the element at index 2
+# my_friends.sort()  # Sorting the list in ascending order
+# my_friends.reverse()  # Reversing the order of the list
+my_friends.count("Zohaib")  # Counting occurrences of "Zohaib" in the list
+print(my_friends.count("Zohaib"))  # Output: 1
