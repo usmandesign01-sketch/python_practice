@@ -255,65 +255,89 @@ Later, when you learn NumPy, Pandas, Machine Learning, and NLP, you'll encounter
 '''
 # Accessing List Elements with help of Indexing
 
-my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
-my_friends[0]
-print(my_friends[0])  # Output: Abdullah
-my_friends[1]
-print(my_friends[1])  # Output: Zohaib
-my_friends[2]
-print(my_friends[2])  # Output: Zubair
-my_friends[3]
-print(my_friends[3])  # Output: Usman Khan
+# my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
+# my_friends[0]
+# print(my_friends[0])  # Output: Abdullah
+# my_friends[1]
+# print(my_friends[1])  # Output: Zohaib
+# my_friends[2]
+# print(my_friends[2])  # Output: Zubair
+# my_friends[3]
+# print(my_friends[3])  # Output: Usman Khan
 
-# Python also supports Negative Indexing
-my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
-print(my_friends[-1])  # Output: Usman Khan
-print(my_friends[-2])  # Output: Zubair
-print(my_friends[-3])  # Output: Zohaib
-print(my_friends[-4])  # Output: Abdullah
+# # Python also supports Negative Indexing
+# my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
+# print(my_friends[-1])  # Output: Usman Khan
+# print(my_friends[-2])  # Output: Zubair
+# print(my_friends[-3])  # Output: Zohaib
+# print(my_friends[-4])  # Output: Abdullah
 
-# Slicing Lists
-my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
-# Slicing from index 1 to 3 (excluding index 3)
-print(my_friends[1:3])  # Output: ['Zohaib', 'Zubair']
-# Slicing from index 0 to 2 (excluding index 2)
-print(my_friends[0:2])  # Output: ['Abdullah', 'Zohaib']
-print(my_friends[2:4])   # Output: ['Zubair', 'Usman Khan']
-print(my_friends[:2])   # Output: ['Abdullah', 'Zohaib']
-print(my_friends[2:4])   # Output: ['Zubair', 'Usman Khan']
-print(my_friends[:4])    # Output: ['Abdullah', 'Zohaib', 'Zubair', 'Usman Khan']
-print(my_friends[:])     # Output: ['Abdullah', 'Zohaib', 'Zubair', 'Usman Khan']
+# # Slicing Lists
+# my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
+# # Slicing from index 1 to 3 (excluding index 3)
+# print(my_friends[1:3])  # Output: ['Zohaib', 'Zubair']
+# # Slicing from index 0 to 2 (excluding index 2)
+# print(my_friends[0:2])  # Output: ['Abdullah', 'Zohaib']
+# print(my_friends[2:4])   # Output: ['Zubair', 'Usman Khan']
+# print(my_friends[:2])   # Output: ['Abdullah', 'Zohaib']
+# print(my_friends[2:4])   # Output: ['Zubair', 'Usman Khan']
+# print(my_friends[:4])    # Output: ['Abdullah', 'Zohaib', 'Zubair', 'Usman Khan']
+# print(my_friends[:])     # Output: ['Abdullah', 'Zohaib', 'Zubair', 'Usman Khan']
 
-# Lists are Mutable
-my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
-# Changing the second element (index 1) to "Ali"
-my_friends[1] = "Ali"
-print(my_friends)  # Output: ['Abdullah', 'Ali', 'Zubair', 'Usman Khan']
+# # Lists are Mutable
+# my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
+# # Changing the second element (index 1) to "Ali"
+# my_friends[1] = "Ali"
+# print(my_friends)  # Output: ['Abdullah', 'Ali', 'Zubair', 'Usman Khan']
 
-# Adding Elements to a List
+# # Adding Elements to a List
+# my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
+# my_friends.append("Ali")  # Adding "Ali" to the end of the list
+# print(my_friends)  # Output: ['Abdullah', 'Zohaib', 'Zubair', 'Usman Khan', 'Ali']
+# my_friends.insert(1, "Ahmed")  # Inserting "Ahmed" at index 1
+# print(my_friends)  # Output: ['Abdullah', 'Ahmed', 'Zohaib', 'Zubair', 'Usman Khan', 'Ali']
+
+# my_friends.insert(3, "Hassan")  # Inserting "Hassan" at index 3
+# print(my_friends)  # Output: ['Abdullah', 'Ahmed', 'Zohaib', 'Hassan', 'Zubair', 'Usman Khan', 'Ali']
+# my_friends.remove("Zubair")  # Removing "Zubair" from the list
+# print(my_friends)  # Output: ['Abdullah', 'Ahmed', 'Zohaib', 'Hassan', 'Usman Khan', 'Ali']
+
+# # Finding the Length of a List
+# my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
+# print(len(my_friends))  # Output: 4
+
+# # Checking if an Element Exists in a List
+# my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
+# print("Usman Kaka Khail" in my_friends)  # Output: False
+# print("Usman Khan" in my_friends)  # Output: True
+
+# # Looping Through a List
+# my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
+# for friend in my_friends:
+#     print(friend)
+
+
+# Sorting a List
+# numbers = [50, 10, 40, 20, 30]
+# numbers.sort()
+# print(numbers)
+
+# letters = ['a', 'c', 'b', 'e', 'd', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# letters.sort()
+# print(letters)
+
+# # Sorting a List in Descending Order
+# numbers = [50, 10, 40, 20, 30]
+# numbers.sort(reverse=True)
+# print(numbers)
+
+# letters = ['a', 'c', 'b', 'e', 'd', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# letters.sort(reverse=True)
+# print(letters)
+
+
+# # Useful List Methods
 my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
 my_friends.append("Ali")  # Adding "Ali" to the end of the list
-print(my_friends)  # Output: ['Abdullah', 'Zohaib', 'Zubair', 'Usman Khan', 'Ali']
-my_friends.insert(1, "Ahmed")  # Inserting "Ahmed" at index 1
-print(my_friends)  # Output: ['Abdullah', 'Ahmed', 'Zohaib', 'Zubair', 'Usman Khan', 'Ali']
+print(my_friends)  # Output: ['Abdullah', 'Zohaib', 'Zubair', 'Usman Khan', 'Ali']  
 
-my_friends.insert(3, "Hassan")  # Inserting "Hassan" at index 3
-print(my_friends)  # Output: ['Abdullah', 'Ahmed', 'Zohaib', 'Hassan', 'Zubair', 'Usman Khan', 'Ali']
-my_friends.remove("Zubair")  # Removing "Zubair" from the list
-print(my_friends)  # Output: ['Abdullah', 'Ahmed', 'Zohaib', 'Hassan', 'Usman Khan', 'Ali']
-
-# Finding the Length of a List
-my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
-print(len(my_friends))  # Output: 4
-
-# Checking if an Element Exists in a List
-my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
-print("Usman Kaka Khail" in my_friends)  # Output: False
-print("Usman Khan" in my_friends)  # Output: True
-
-# Looping Through a List
-my_friends = ["Abdullah", "Zohaib", "Zubair", "Usman Khan"]
-for friend in my_friends:
-    print(friend)
-
-    
