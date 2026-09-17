@@ -348,5 +348,54 @@ Later, when you learn NumPy, Pandas, Machine Learning, and NLP, you'll encounter
 # print(my_friends.count("Zohaib"))  # Output: 1
 
 
-number = [10, 20, 30, 40, 50]
-print(sum(number))
+# number = [10, 20, 30, 40, 50]
+# print(sum(number))
+
+'''🔥 Problem 1 — Numbers Analyzer
+Ask the user for 5 numbers and store them in a list.
+Then use a loop to find:
+- Total
+- Average
+- Largest
+- Smallest
+- Number of even numbers
+- Number of odd numbers
+🚨 Don't use:
+sum()
+max()
+min()
+Use your loop logic.'''
+
+user_numbers = []
+for i in range(5):
+    num = int(input(f"Enter number {i + 1}: "))
+    user_numbers.append(num)
+
+total = 0
+largest = user_numbers[0]
+smallest = user_numbers[0]
+even_count = 0
+odd_count = 0
+
+for num in user_numbers:
+    total += num
+
+    if num > largest:
+        largest = num
+
+    if num < smallest:
+        smallest = num
+
+    if num % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+
+average = total / len(user_numbers)
+
+print(f"Total: {total}")
+print(f"Average: {average}")
+print(f"Largest: {largest}")
+print(f"Smallest: {smallest}")
+print(f"Number of even numbers: {even_count}")
+print(f"Number of odd numbers: {odd_count}")
