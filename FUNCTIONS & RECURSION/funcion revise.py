@@ -21,16 +21,16 @@
 # greet()
 # greet()
 
-def hi(name):
+def hi(name): # name is a parameter
     print("Hello", name)
-hi("Usman")
+hi("Usman") # Usman is an argument
 hi("Alice")
 hi("Bob")
 hi("Charlie")
 hi("David")
 
 def add(a, b):
-    return a + b
+    return a + b # return send the value where the function is called
 
 result = add(5, 3)
 print(f"The sum is: {result + 2}")

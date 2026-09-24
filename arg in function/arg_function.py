@@ -70,15 +70,17 @@
 # *********************************************************************************
 
 # incompleteeeeeeeeee
+# print("====Result====")
 # def num(*numbers):
-#     largest_number = [0]
+#     largest_number = 0
 #     for x in numbers:
+#         print(x)
 #         if x > largest_number:
-#             print (x)
 #             largest_number = x
+
 #     return largest_number
 # a = num(10,20,30,40,50)
-# print(a)
+# print("Largest number:", a)
 # *********************************************************************************
 
 # final challenge question 
@@ -87,20 +89,30 @@
     largest number nikalna hai
     even numbers ki count nikani hai'''
 
-def analyze_number(*numbers):
-    total = 0
-    average = 0
-    largest = 0
-    count_even = 0
-    for i in numbers:
-        total = total + i
-        average = total/len(numbers)
-        if i > largest:
-            largest = i
-        if i % 2 == 0:
-            count_even = count_even + 1
-    print(" Total:",total,"\n","Average:",average,"\n","Largest:",largest,"\n","Total even number:",count_even)
-    return total, average, largest, count_even
+# def analyze_number(*numbers):
+#     total = 0
+#     average = 0
+#     largest = 0
+#     count_even = 0
+#     for i in numbers:
+#         total = total + i
+#         average = total/len(numbers)
+#         if i > largest:
+#             largest = i
+#         if i % 2 == 0:
+#             count_even = count_even + 1
+#     print(" Total:",total,"\n","Average:",average,"\n","Largest:",largest,"\n","Total even number:",count_even)
+#     return total, average, largest, count_even
 
 
-analyze_number (10,25,8,40,13,22,34,44,33,6)
+# analyze_number (10,25,8,40,13,22,34,44,33,6)
+
+# arg is used when we don't know how many numbers the user will enter
+
+# What does args contain?
+# Inside the function, args is a tuple.
+
+def num(*user):
+    return (sum(user))
+a = num(10,20,30,40,50)
+print("Total:", a)
