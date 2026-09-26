@@ -9,4 +9,8 @@ print("Hello\nWorld")  # This will print "Hello" on one line and "World" on the 
 
 print("My name is Usman Khan \n learning python language. \n \t Date: two thausand twenty six")
 
+
+for i in range(10):
+    print(i, end = " ")
+
 #how many escape sequences have ? there are 
