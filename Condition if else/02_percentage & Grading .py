@@ -34,3 +34,14 @@ elif percentage >= 50:
 
 else:
     print("Grade: F")
+
+
+# *******************
+print()
+print("====Multiplication Table====")
+print()
+user = int(input("Ener number: "))
+print()
+for x in range(1,11):
+    print(f"{user} x {x} = {user * x}")
+print()
