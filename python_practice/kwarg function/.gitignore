@@ -1,0 +1,8 @@
+@"
+*.txt
+python_practice/
+python_practice.worktrees/
+revision/
+__pycache__/
+.python_practice/
+"@ | Set-Content -Path .gitignore

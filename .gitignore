@@ -1,5 +1,4 @@
 *.txt
-python_practice/
 python_practice.worktrees/
 revision/
 __pycache__/
